@@ -10,6 +10,10 @@
   --bg-color: rgba(229, 229, 229, 1);
   --header-border-color: rgba(236, 236, 236, 1);
   --portfolio-cards-border: rgba(238, 238, 238, 1);
+  --team-cards-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  --buttons-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 body {
   background-color: var(--body-hero-color);
@@ -207,8 +211,7 @@ header {
   background-color: var(--body-hero-color);
   min-width: 270px;
   border-radius: 0 0 4px 4px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: var(--team-cards-shadow);
   -webkit-border-radius: 0 0 4px 4px;
   -moz-border-radius: 0 0 4px 4px;
   -ms-border-radius: 0 0 4px 4px;
@@ -255,6 +258,7 @@ address {
 }
 
 /* second page Portfolio */
+
 .portfolio-second {
   padding: 94px 0;
 }
@@ -283,8 +287,7 @@ address {
 .buttons:focus {
   background-color: var(--accent-color);
   color: var(--body-hero-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: var(--buttons-shadow);
 }
 .projects-title {
   font-weight: 700;
@@ -317,7 +320,6 @@ address {
   border: 1px solid var(--portfolio-cards-border);
   border-top: none;
   padding: 20px 0 0 24px;
-  /* padding-bottom: 20px; */
 }
 .portfolio > :not(li:nth-child(3n)) {
   margin-right: 30px;
