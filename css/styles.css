@@ -97,6 +97,7 @@ header {
 .header-nav-list a,
 .header-address a {
   padding: 32px 0;
+  display: block;
 }
 .nav-links:focus,
 .nav-links:hover,
@@ -112,6 +113,7 @@ header {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+  display: block;
 }
 
 .nav-contacts {
@@ -137,6 +139,7 @@ header {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--body-hero-color);
+  margin-bottom: 30px;
 }
 .hero-btn {
   background-color: var(--accent-color);
@@ -162,9 +165,6 @@ header {
 
 /* advantages */
 
-.section.advantages {
-  padding-bottom: 0;
-}
 .advantages-list {
   display: flex;
   flex-wrap: wrap;
@@ -189,6 +189,9 @@ header {
 
 /* works */
 
+.section.works {
+  padding-top: 0;
+}
 .titles-basic.works {
   margin-bottom: 50px;
 }
@@ -264,6 +267,7 @@ address {
   padding: 94px 0;
 }
 .buttons {
+  padding: 6px 22px;
   background-color: var(--bnt-bg--color);
   border: none;
   cursor: pointer;
@@ -314,7 +318,7 @@ address {
   margin-right: var(--margins-portfolio-cards);
 }
 .portfolio-list img {
-  width: 100%;
+  max-width: 100%;
 }
 /* .portfolio-list {
   margin-bottom: 30px;
